@@ -62,7 +62,7 @@ class WoltBottomSheetType extends WoltModalType {
   @override
   BoxConstraints layoutModal(Size availableSize) {
     return BoxConstraints(
-      minWidth: availableSize.width,
+      minWidth: availableSize.width *.3,
       maxWidth: availableSize.width,
       minHeight: 0,
       maxHeight: availableSize.height * 0.9,
