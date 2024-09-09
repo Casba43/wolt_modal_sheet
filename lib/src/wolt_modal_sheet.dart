@@ -918,7 +918,7 @@ class _WoltModalMultiChildLayoutDelegate extends MultiChildLayoutDelegate {
   void performLayout(Size size) {
     layoutChild(
       barrierLayoutId,
-      BoxConstraints(maxWidth: size.width, maxHeight: size.height),
+      BoxConstraints(maxWidth: size.width, maxHeight: size.height, minWidth: size.width *.3, minHeight: 0.0),
     );
     final modalContentSize = layoutChild(
       contentLayoutId,
